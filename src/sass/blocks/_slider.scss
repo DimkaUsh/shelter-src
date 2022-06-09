@@ -1,0 +1,126 @@
+.slider {
+  width: 100%;
+  height: 435px;
+  margin: 60px 0;
+  display: flex;
+  justify-content: space-between;
+
+  & .circle__button {
+    display: block;
+  }
+
+  & .carousel {
+    position: relative;
+    width: 100%;
+    &-window {
+      width: 82.2%;
+      overflow: hidden;
+    }
+  }
+}
+
+@keyframes move-right {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 1080px;
+  }
+}
+
+@keyframes move-left {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -1080px;
+  }
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 2s;
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 2s;
+}
+
+.new-right {
+  position: absolute;
+  top: 0;
+  left: 1080px;
+}
+
+.new-left {
+  position: absolute;
+  top: 0;
+  left: -1080px;
+}
+
+.circle__button {
+  position: relative;
+
+  width: 52px;
+  height: 52px;
+  background: none;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  margin-top: 192px;
+  padding: 15px 24px;
+  text-decoration: none;
+
+  &:hover {
+    background: #fddcc4;
+    cursor: pointer;
+    border: none;
+  }
+
+  &:hover img {
+    top: 23px;
+    left: 19px;
+  }
+
+  & img {
+    position: absolute;
+    top: 21px;
+    left: 17px;
+  }
+}
+
+.circle {
+  &_left {
+    border: 2px solid rgba(0, 0, 25, 0.11);
+  }
+}
+
+// @media (max-width: 1279px) {
+//   @keyframes move-right {
+//     from {
+//       right: 0px;
+//     }
+//     to {
+//       right: 580px;
+//     }
+//   }
+
+//   @keyframes move-left {
+//     from {
+//       right: 0px;
+//     }
+//     to {
+//       right: -580px;
+//     }
+//   }
+
+//   .transition-left {
+//     animation-name: move-left;
+//     animation-duration: 1.5s;
+//   }
+
+//   .transition-right {
+//     animation-name: move-right;
+//     animation-duration: 1.5s;
+//   }
+// }

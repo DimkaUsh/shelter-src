@@ -1,0 +1,68 @@
+.footer{
+    height: 352px;
+    padding-top: 42px;
+
+    background: url(../assets/images/footer-gradient-background.png) center center/cover no-repeat;
+
+    & .title{
+        width: 300px;
+    }
+    
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 160px;
+    }
+
+    &__content{
+        padding-top: 16px;
+        width: 740px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 160px;
+    }
+
+    &__contacts{
+        width: 278px;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+    &__adress{
+        width: 43.7%;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    & a{
+        display: flex;
+        gap: 20px;
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 161%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+        text-decoration: none;
+        & .first{
+            line-height: 115%;
+        }
+    }
+
+    &__image{
+        width: 35%;
+        height: 310px;
+    }
+
+    & .first_adress span{
+        line-height: 23px;
+    }
+
+}

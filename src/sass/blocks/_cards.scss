@@ -1,0 +1,53 @@
+.cards {
+  width: 990px;
+  display: flex;
+  justify-content: space-between;
+
+  &_pets {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 959px;
+    padding-top: 59px;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+
+  &-wrapper {
+    transition: all 0.5s;
+    height: 959px;
+    width: 1200px;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 435px);
+    grid-auto-flow: column;
+    row-gap: 30px;
+    column-gap: 40px;
+  }
+}
+
+.pet-card {
+  width: 270px;
+  height: 435px;
+  padding-bottom: 30px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    background: #ffffff;
+  }
+
+  &:hover button {
+    background: #fddcc4;
+    border: 2px solid #fddcc4;
+  }
+}

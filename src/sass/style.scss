@@ -1,0 +1,50 @@
+@import "base/mixins";
+@import "base/variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+.body_open {
+  overflow-y: hidden;
+}
+
+section {
+  padding: 80px 0 98.5px 0;
+}
+
+@import "blocks/titles";
+
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/promo";
+@import "blocks/about";
+@import "blocks/pets";
+@import "blocks/slider";
+@import "blocks/cards";
+@import "blocks/ourpets";
+@import "blocks/help";
+@import "blocks/donation";
+@import "blocks/footer";
+@import "blocks/hamburger";
+@import "blocks/modal";
+
+@import "blocks/button";
+@import "base/media";

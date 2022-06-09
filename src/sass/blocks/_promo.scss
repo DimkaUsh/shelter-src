@@ -1,0 +1,44 @@
+.promo{
+    height: 908px;
+    padding: 180px 0 0 0;
+    background: url(../assets/images/start-screen-gradient-background.png) center center/cover no-repeat, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+
+    &__wrapper{
+        position: relative;
+        height: 728px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content{
+        margin-top: 163px;
+        width: 460px;
+        height: 322px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__subheading{
+        font-family: 'Arial', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #CDCDCD;
+    }
+
+    & a{
+        text-decoration: none;
+    }
+
+    &__start-image{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 698px;
+        height: 728px;
+        & img{
+            height: 100%;
+        }
+    }
+}

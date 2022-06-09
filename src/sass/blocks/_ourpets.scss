@@ -1,0 +1,55 @@
+.ourpets {
+  height: 1342px;
+  background: #f6f6f6;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navigation {
+  width: 340px;
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation__button {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background: none;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+
+  &:hover {
+    background: #fddcc4;
+    cursor: pointer;
+    border: none;
+  }
+
+  & svg {
+    fill: #292929;
+  }
+
+  &.page {
+    background: #f1cdb3;
+  }
+
+  &.unactive {
+    border: 2px solid rgba(0, 0, 25, 0.11);
+
+    & svg {
+      fill: #cdcdcd;
+    }
+
+    &:hover {
+      background: none;
+      border: 2px solid rgba(0, 0, 25, 0.11);
+      cursor: auto;
+    }
+  }
+}

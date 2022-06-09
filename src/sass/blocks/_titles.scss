@@ -1,0 +1,42 @@
+.title {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #545454; 
+
+    &_header{
+        font-size: 32px;
+        line-height: 110%;
+        color: #F1CDB3;
+        &_pets{
+            color: #545454;
+        }
+    };
+
+    &_promo{
+        width: 350px;
+        font-size: 44px;
+        line-height: 130%;
+        letter-spacing: 0.003em;
+    }
+    
+    &_section{
+        width: 400px;
+        font-size: 35px;
+        line-height: 130%;
+    }
+
+    &_card{
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 22.72px;
+    }
+
+    &_center{
+        text-align: center;
+    }
+
+    &_white{
+        color: #ffffff;
+    }
+};

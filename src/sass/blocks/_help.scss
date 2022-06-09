@@ -1,0 +1,29 @@
+.help {
+  min-height: 611px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    width: 99%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 55px;
+  }
+
+  &__item {
+    height: 113px;
+    text-align: center;
+
+    & h4 {
+      margin-top: 25px;
+    }
+  }
+}

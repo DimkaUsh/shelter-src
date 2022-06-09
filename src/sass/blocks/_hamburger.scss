@@ -1,0 +1,136 @@
+.hamburger {
+  position: relative;
+  transition: all 0.5s;
+  display: none;
+  width: 30px;
+  height: 30px;
+  margin: 18.5px 43px 0 0;
+  flex-direction: column;
+  gap: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #f1cdb3;
+  }
+
+  &_pets {
+    & span {
+      background: #000000;
+    }
+  }
+  &_active {
+    transition: all 0.5s;
+    transform: rotate(90deg);
+    position: relative;
+    z-index: 15;
+    & span {
+      background: #f1cdb3;
+    }
+  }
+
+  &_right {
+    position: relative;
+    top: -30px;
+    right: -75%;
+  }
+
+  &-wrapper {
+    position: fixed;
+    overflow: hidden;
+    height: 100vh;
+    width: 0;
+    z-index: 12;
+
+    &_open {
+      right: 0;
+      width: 100%;
+      overflow: visible;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    & .logo {
+      width: 190px;
+      position: relative;
+      top: 31px;
+      left: 5px;
+    }
+  }
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 320px;
+  background: #292929;
+  height: 100vh;
+  z-index: 5;
+  transition: all, 0.5s;
+
+  & div {
+    width: 190px;
+  }
+
+  & .title {
+    transition: opacity, 0.5s;
+    width: 190px;
+    opacity: 0;
+  }
+
+  & .header__subtitle {
+    transition: opacity, 0.5s;
+    width: 190px;
+    opacity: 0;
+  }
+  &_open {
+    right: 0;
+  }
+
+  & .visible {
+    opacity: 1;
+  }
+
+  &__list {
+    padding: 203px 38px 0 38px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 67px;
+  }
+
+  & .active {
+    position: relative;
+    color: #fafafa;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: -9.4px;
+      width: 100%;
+      height: 2px;
+      background: #f1cdb3;
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    transition: 0.4s linear;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 21.2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: flex;
+  }
+}

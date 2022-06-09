@@ -1,0 +1,19 @@
+.pets {
+  height: 877px;
+  background: #f6f6f6;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & .nav {
+    display: none;
+  }
+}
